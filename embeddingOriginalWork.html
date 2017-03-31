@@ -2,14 +2,49 @@
 <html>
     <head>
         <title>-Embedding-</title>
-        
+       <style>
+        #ytbv {
+                    border:3px solid darkgray;
+                    margin: 50px auto;
+                    display: block;
+                    }
+          #s1{
+              margin: 10px auto;
+              display: block;
+              
+          }
+          
+           #word {
+                font-family: cursive; 
+                font-size: 50px;
+                text-align: center;
+                color: red;
+            }
+        </style> 
     </head>
     <body style="background-color:lightgrey;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LCFz3isPdB4#t=3m" frameborder="1" style="border:3px solid darkgray;" allowfullscreen>
-        <p style="font-family: cursive; font-size: 50px; text-align: center;color: red;">
-    Change a browser!!</p>
+        <iframe id="ytbv" width="560" height="315" src="https://www.youtube.com/embed/vf7HlGbxKCI?start=180&end=256&autoplay=1" frameborder="1" 
+                 allowfullscreen >
+                 
+        <p id="word">
+        Change a browser!!</p>
         </iframe>
-        <iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/UkWd0azv3fQ#t=2m30s" width="420"></iframe>
+ <audio controls id="s1">
  
+  <source src="audio1.mp3" type="audio/mpeg">
+    <p id="word"> Change a browser!!</p>
+</audio>
+<video id="ytbv" width="560" height="315" controls>
+  <source src="video.mp4" type="video/mp4">
+
+    <p id="word">Your browser does not support the video tag.</p>
+</video>
+
+<object id="ytbv" width="384" height="216" data="1.jpg"></object>
+
+
+
+
+
     </body>
 </html>
