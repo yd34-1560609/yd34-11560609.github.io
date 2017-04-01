@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>INFO 101 Embedding Page</title>
+  <link>https://yd34-1560609.github.io/embeddingOriginalWork.html</link>
+  <description>main Page</description>
+  <item>
+    <title>Html5 Video Embedding</title>
+    <link>https://yd34-1560609.github.io/embeddingOriginalWork.html/video1.mp4</link>
+    <description>Example video</description>
+  </item>
+  <category>Web Embedding Homework</category>
+</channel>
+
+</rss>
