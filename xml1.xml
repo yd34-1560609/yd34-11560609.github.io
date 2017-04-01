@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="https://yd34-1560609.github.io/xml1.xml">
+<rss version="2.0" xmlns:feedr="https://yd34-1560609.github.io/feedr">
 
 <channel>
   <title>INFO 101 Embedding Page</title>
   <link>https://yd34-1560609.github.io/embeddingOriginalWork.html</link>
   <description>main Page</description>
   <category>Web Embedding Homework</category>
+  <feddr:link href="https://yd34-1560609.github.io/xml1.xml" rel="self" type="application/rss+xml" />
 
   
   <item>
