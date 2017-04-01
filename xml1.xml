@@ -5,7 +5,7 @@
   <title>INFO 101 Embedding Page</title>
   <link>https://yd34-1560609.github.io/embeddingOriginalWork.html</link>
   <description>main Page</description>
-  
+  <category>Web Embedding Homework</category>
 
   
   <item>
@@ -14,7 +14,7 @@
     <description>Example video</description>
  <guid isPermaLink="true">http://yd34-1560609.github.io/embeddingOriginalWork.html</guid>
   </item>
-  <category>Web Embedding Homework</category>
+  
 </channel>
 
 </rss>
