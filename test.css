@@ -1,0 +1,70 @@
+body{
+    background-image: url(ep_naturalblack.png);
+    background-position: center;
+    background-attachment: fixed;
+
+}
+div{
+    background-color: purple;
+}
+div:hover{
+    background-color: darkorchid;
+}
+#Header{
+    width: 500px;
+    
+    
+    
+}
+#Header, #LeftNav, #Content, #Footer{
+    border: 8px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#Header h1{
+    font-size: 60px;
+    font-family: "Passion One";
+    font-weight: bold;
+    color: #FFBC00;
+}
+
+#LeftNav{
+    width: 400px;
+    text-decoration: underline;
+    float:left;
+    clear: left;
+    padding-bottom: 8px;
+}
+
+#Content{
+    width: 700px;
+    
+    
+    padding: 15px;
+}
+
+#Footer{
+    width: 700px;
+    
+    
+}
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+    text-transform: capitalize;
+}
+
+p{
+    font-weight: bold;
+    font-family: "Arial";
+    color: white;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
