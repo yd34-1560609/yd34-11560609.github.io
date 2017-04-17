@@ -1,8 +1,31 @@
 body{
     background-attachment: fixed;
-    background-image: url(https://wallpaperscraft.com/image/line_light_background_bright_43975_2560x1600.jpg);
+    background-image: url(https://www.walldevil.com/wallpapers/a85/backgrounds-high-resolution-blurred-background1-blur-light-blue.jpg);
 }
 
-#title{
+.title{
+    
+    font-style: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #cfe6fc;
+    
+}
+
+#submit{
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+
+#po{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#toright{
+    text-align: right;
+}
+
+.tocenter{
     text-align: center;
 }

@@ -3,52 +3,86 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Job Application D</title>
+	<title>-Application Form-</title>
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="aply.css">
 </head>
 <body>
+<p>&nbsp;</p>
+
 <div class="container">
 
-<h2 id="title">APPLICATION FOR EMPLOYMENT</h2>
+<h2 class="title tocenter">APPLICATION FOR EMPLOYMENT</h2>
 
 <p>&nbsp;</p>
 
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+	<div class="form-group row form-horizontal">
+				<div class="col-sm-7"></div>
+			<label class="col-sm-2  control-label">DATE OF APPLICATION</label>
+				<div class="col-sm-3">
+					<input class="form-control" type="date" name="appday">
+				</div>
+		</div>
+		
+<fieldset class="form-horizontal" >
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Application ID</label>
+			<div class="col-sm-4">
+				<input class="form-control" type="text" name="email">
+			</div>
+			<label class="col-sm-2 control-label">Password</label>
+			<div class="col-sm-4">
+				<input class="form-control" type="password" name="password">
+			</div>	
+		</div>
+	</fieldset>
+	<p>&nbsp;</p>
 
-	
 
 	<fieldset class="form-horizontal " >
-		<legend>Personal Information</legend>
+		<legend class="title tocenter">Personal Information</legend>
 		
 		
 		<div class="form-group row">
-			<label class="col-sm-3 control-label">Full name</label>
-				<div class="col-sm-4">
-					<input class="form-control" type="text" name="name">
+			<label class="col-sm-2 control-label">Last name</label>
+				<div class="col-sm-2">
+					<input class="form-control" type="text" name="L-name">
+				</div>
+		<label class="col-sm-2 control-label">First name</label>
+				<div class="col-sm-2">
+					<input class="form-control" type="text" name="F-name">
+				</div>
+		<label class="col-sm-2 control-label">Middle</label>
+				<div class="col-sm-2">
+					<input class="form-control" type="text" name="M-name">
 				</div>
 		</div>
 
 
-
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Street address</label>
-			<div class="col-sm-9">
+<div class="form-group row">
+	<label class="col-sm-2 control-label">Street address</label>
+			<div class="col-sm-6">
 				<input class="form-control" type="text" name="street">
 			</div>
-		</div>
+	<label class="col-sm-2 control-label">(Apt)</label>
+			<div class="col-sm-1">
+				<input class="form-control" type="text" name="apt">
+			</div>
+	</div>
+
+	
+
 
 		<div class="form-group">
-			<label class="col-sm-3 control-label">City</label>
-			<div class="col-sm-9">
+			
+			<label class="col-sm-2 control-label">City</label>
+			<div class="col-sm-2">
 				<input class="form-control" type="text" name="city">
 			</div>
-		</div>
-
-
-		<div class="form-group">
-			<label class="col-sm-3 control-label">State</label>
-			<div class="col-sm-9">
+		
+		<label class="col-sm-2 control-label">State</label>
+			<div class="col-sm-3">
 				<select class="form-control" name="state">
 					<option value="" selected="true">Choose a State</option>
 					<option value="AL">Alabama</option>
@@ -104,34 +138,86 @@
 					<option value="WY">Wyoming</option>
 				</select>
 			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">ZIP</label>
-			<div class="col-sm-9">
+			<label class="col-sm-1 control-label">ZIP</label>
+			<div class="col-sm-2">
 				<input class="form-control" type="text" name="zip">
 			</div>
 		</div>
+
+<div class="form-group row">
+	<label class="col-sm-2 control-label">Phone</label>
+			<div class="col-sm-2">
+				<input type="tel" name="usrphone">
+			</div>
+	<label class="col-sm-2 control-label">E-mail</label>
+			<div class="col-sm-2">
+				<input type="email" name="email">
+			</div>
+	</div>
+
+
+
 	</fieldset>
+
+
+
+
+
+
 
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Availability</legend>
-		<div class="form-group row">
-			<label class="col-sm-12 control-label">Are you legally able to be employed in this country?</label>
-			<div class="col-sm-offset-1 col-sm-11">
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="yes">Yes
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="no">No
-					</label>
-				</div>
+		<legend class="title tocenter">Availability</legend>
+		
+		<div class="form-group row form-horizontal">
+			<label id="po" class="col-sm-2 control-label">Position Sought</label>
+			<div class="col-sm-4">
+				<input class="form-control" type="text" name="position">
+			</div>
+			<label class="col-sm-2 control-label">Desired Pay Range</label>
+			<div class="col-sm-4">
+				<select class="form-control" name="payrange">
+					<option value="" selected="true">Choose a Range</option>
+					<option value="2">20$/hr - 35$/hr</option>
+					<option value="3">35$/hr - 60$/hr</option>
+					<option value="6">60$/hr - 105$/hr</option>
+					<option value="10">105$/hr+</option>
+					<option value="ne">Negotiable</option>
+				</select>
 			</div>
 		</div>
+		
+		<div class="form-group row">
+			<label class="col-sm-12">Are you currently employed?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+			   <div class="radio">
+					
+						<input type="radio" name="employe" value="yes">Yes
+			   </div>
+					
+				<div class="radio">
+		
+						<input type="radio" name="employe" value="no">No
+				</div>
+					
+			   </div>
+		</div>
+			
+		<div class="form-group row">
+			<label class="col-sm-12">Are you willing to work overtime?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+			   <div class="radio">
+						<input type="radio" name="overtime" value="yes">Yes
+			   </div>
+				<div class="radio">
+						<input type="radio" name="overtime" value="no">No
+				</div>
+			   </div>
+		</div>
+
+
+
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
 			<div class="col-sm-offset-1 col-sm-11">
@@ -161,39 +247,55 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div class="form-group row">
-			<label class="col-sm-12 control-label">Hours available</label>
+			<label style="font-size: 25px;" class="col-sm-12 control-label">Education and Work experience</label>
 			<div class="col-sm-12">
 				<table class="table table-bordered">
 					<tr>
 						<td></td>
-						<th>Sun</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-						<th>Thu</th>
-						<th>Fri</th>
-						<th>Sat</th>
+						<th id="tocenter">Name and location</th>
+						<th id="tocenter">Degree/Position</th>
+						<th id="tocenter">Major/Subjects of Work</th>
+						
 					</tr>
 					<tr>
-						<th>From</th>
-						<td><input class="form-control" type="time" name="su_from"></td>
-						<td><input class="form-control" type="time" name="mo_from"></td>
-						<td><input class="form-control" type="time" name="tu_from"></td>
-						<td><input class="form-control" type="time" name="we_from"></td>
-						<td><input class="form-control" type="time" name="th_from"></td>
-						<td><input class="form-control" type="time" name="fr_from"></td>
-						<td><input class="form-control" type="time" name="sa_from"></td>
+						<th id="toright">University or College</th>
+						<td><input class="form-control" type="text" name="Uname_from"></td>
+						<td><select class="form-control" name="degree_from">
+								<option value="" selected="true">Choose a Degree</option>
+								<option value="ass">Associate degrees</option>
+								<option value="bach">Bachelor's degrees</option>
+								<option value="fp">First professional degrees</option>
+								<option value="master">Master's degrees</option>
+								<option value="other">Other</option>
+							</select>
+						</td>
+						
+						<td><input class="form-control" type="text" name="major_from"></td>
+					
 					</tr>
 					<tr>
-						<th>Until</th>
-						<td><input class="form-control" type="time" name="su_until"></td>
-						<td><input class="form-control" type="time" name="mo_until"></td>
-						<td><input class="form-control" type="time" name="tu_until"></td>
-						<td><input class="form-control" type="time" name="we_until"></td>
-						<td><input class="form-control" type="time" name="th_until"></td>
-						<td><input class="form-control" type="time" name="fr_until"></td>
-						<td><input class="form-control" type="time" name="sa_until"></td>
+						<th id="toright">Internship-1</th>
+						<td><input class="form-control" type="text" name="I1name_from"></td>
+						<td><input class="form-control" type="text" name="Position_form"></td>
+						<td><input class="form-control" type="text" name="i1subject_from"></td>
+						
+					</tr>
+					<tr>
+						<th id="toright">Internship-2</th>
+						<td><input class="form-control" type="text" name="I2name_from"></td>
+						<td><input class="form-control" type="text" name="Position_form"></td>
+						<td><input class="form-control" type="text" name="i2subject_from"></td>
+						
+					</tr>
+					<tr>
+						<th id="toright">Workplace</th>
+						<td><input class="form-control" type="text" name="Wname_from"></td>
+						<td><input class="form-control" type="text" name="Position_form"></td>
+						<td><input class="form-control" type="text" name="wsubject_from"></td>
+
 					</tr>
 				</table>
 			</div>
@@ -203,48 +305,39 @@
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Personal Statement</legend>
+		<legend class="title tocenter">Personal Statement</legend>
 		<div class="form-group">
 			<label class="control-label">Why do you deserve this job?</label>
 			<textarea class="form-control" name="deserve" rows="6"></textarea>
 		</div>
 		<div class="form-group">
 			<label class="control-label">Describe a recent project</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
+			<textarea class="form-control" name="project" rows="3"></textarea>
+		</div>
+
+	<div class="form-group">
+			<label class="control-label">Describe a professional skill you've developed in your most recent job</label>
+			<textarea class="form-control" name="project" rows="3"></textarea>
 		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
 
-	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+	<input id="submit" class="btn btn-primary btn-lg" type="submit" value="Submit form">
 
+	
+	
+	<fieldset>
+		<hr>
+	</fieldset>
+	
+	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	
-	<fieldset class="form-horizontal" >
-		<legend>Account</legend>
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Email</label>
-			<div class="col-sm-6">
-				<input class="form-control" type="text" name="email">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Password</label>
-			<div class="col-sm-9">
-				<input class="form-control" type="password" name="password">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Repeat password</label>
-			<div class="col-sm-9">
-				<input class="form-control" type="password" name="repeat_password">
-			</div>
-		</div>
-	</fieldset>
+	
 
-	<p>&nbsp;</p>
 
 </form>
-</div><!-- close .container -->
+</div>
 </body>
 </html>
